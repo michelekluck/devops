@@ -49,3 +49,46 @@ body {
     color: #3E6D46;
     font-weight: bold;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.item {
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+}
+
+.button-idk {
+    background-color: red;
+    color: white;
+    margin-right: 8px;
+    cursor: pointer
+}
+
+.input-div {
+    background-color: white;
+    margin-right: 8px;
+}
+
+.input-div input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    text-align: center;
+}
+
+.button-send {
+    background-color: #A3A38B;
+    color: white;
+    cursor: pointer
+}
