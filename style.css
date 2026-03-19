@@ -3,7 +3,7 @@ body {
     background-color: #E6CEAB;
 }
 
-.card {
+#group {
     background-color: #A3A38B;
     width: 300px;
     height: 200px;
@@ -11,4 +11,103 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.header-group {
+    position: relative;
+    height: 60px;
+    position: relative;
+}
+
+.header:last-child {
+    position: absolute;
+    left: 20px;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.title {
+    margin: 0px;
+}
+
+.title-div {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0px;
+}
+
+.card {
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    gap: 10px;
+}
+
+.text-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    font-weight: 500px;
+}
+
+#button-answer {
+    color: #3E6D46;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.item {
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+}
+
+.button-idk {
+    background-color: red;
+    color: white;
+    margin-right: 8px;
+    cursor: pointer
+}
+
+.input-div {
+    background-color: white;
+    margin-right: 8px;
+}
+
+.input-div input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: inherit;
+    text-align: center;
+}
+
+.button-send {
+    background-color: #A3A38B;
+    color: white;
+    cursor: pointer
 }
