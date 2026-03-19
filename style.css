@@ -1,6 +1,8 @@
 body {
     font-family: "IBM Plex Mono", monospace;
     background-color: #E6CEAB;
+    display: grid;
+    place-items: center;
 }
 
 #group {
@@ -11,4 +13,31 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.group-title {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    width: 500px;
+    height: 300px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.text-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    font-weight: 500px;
 }
