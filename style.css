@@ -13,9 +13,28 @@ body {
     justify-content: center;
 }
 
-.group-title {
-    display: flex;
-    justify-content: center;
+.header-group {
+    position: relative;
+    height: 60px;
+    position: relative;
+}
+
+.header:last-child {
+    position: absolute;
+    left: 20px;
+    transform: translateY(-50%);
+    top: 50%;
+}
+
+.title {
+    margin: 0px;
+}
+
+.title-div {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0px;
 }
 
 .card {
