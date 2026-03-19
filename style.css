@@ -1,8 +1,6 @@
 body {
     font-family: "IBM Plex Mono", monospace;
     background-color: #E6CEAB;
-    display: grid;
-    place-items: center;
 }
 
 #group {
@@ -25,13 +23,18 @@ body {
     width: 500px;
     height: 300px;
     border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    gap: 10px;
 }
 
 .text-card {
@@ -40,4 +43,9 @@ body {
     justify-content: center;
     height: 300px;
     font-weight: 500px;
+}
+
+#button-answer {
+    color: #3E6D46;
+    font-weight: bold;
 }
