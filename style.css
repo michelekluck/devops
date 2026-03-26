@@ -17,6 +17,8 @@ body {
     position: relative;
     height: 60px;
     position: relative;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .header:last-child {
@@ -110,4 +112,13 @@ body {
     background-color: #A3A38B;
     color: white;
     cursor: pointer
+}
+
+.pontuacao {
+    align-self: flex-start;
+}
+
+.pontuacao p {
+    margin: 0;
+    color: grey;
 }
