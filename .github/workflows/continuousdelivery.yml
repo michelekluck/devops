@@ -20,3 +20,13 @@ jobs:
           path: |
             **/*.html
             script.js
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: deliver
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: projetozipado
+      - name: Display strutcture of downloaded files
+        run: ls -R
