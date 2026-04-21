@@ -40,9 +40,9 @@ jobs:
   discord:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Run Discord Webhook
-        uses: johnnyhuy/actions-discord-git-webhook@v1.0.4
-        with:
-          webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
+      - name: Send Discord notification
+        uses: Ilshidur/action-discord@master
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_USERNAME: GitHub
+          DISCORD_MESSAGE: "Build concluído 🚀"
