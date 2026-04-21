@@ -36,3 +36,13 @@ jobs:
 
       - name: Set Up Docker Buildx
         uses: docker/setup-buildx-action@v3
+
+  discord:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Discord notification
+        uses: Ilshidur/action-discord@master
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          DISCORD_USERNAME: GitHub
+          DISCORD_MESSAGE: "Build concluído 🚀"
