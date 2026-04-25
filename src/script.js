@@ -28,15 +28,14 @@ buttonAnswer.addEventListener("click", () => {
 
 // validar resposta 
 buttonSend.addEventListener("click", () => {
-    const valor = input.value.trim().toLowerCase();
-    const respostaCorreta = resposta.toLowerCase();
+    const valor = input.value;
 
-    if (valor === "") {
+    if (valor.trim() === "") {
         alert("Digite uma resposta!");
         return;
     }
 
-    if (valor === respostaCorreta) {
+    if (isAnswerValid(valor, resposta)) {
         alert("acertou!")
 
         acertos++;
@@ -48,3 +47,17 @@ buttonSend.addEventListener("click", () => {
         alert("errou!")
     }
 })
+
+function isAnswerValid(valor, respostaCorreta) {
+    const normalizar = (texto) =>
+        texto
+            .toLowerCase()
+            .trim()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+
+    const v = normalizar(valor);
+    const r = normalizar(respostaCorreta);
+
+    return v.includes(r) || r.includes(v);
+}

@@ -36,3 +36,10 @@ jobs:
 
       - name: Set Up Docker Buildx
         uses: docker/setup-buildx-action@v3
+
+  testes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rodar testes JS
+        run: node test/test.js
