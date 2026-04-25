@@ -23,25 +23,25 @@ function teste(nome, condicao) {
 
 teste(
     "Resposta exata",
-    respostaEhValida("Estava bisbilhotando", "Estava bisbilhotando")
+    isAnswerValid("Estava bisbilhotando", "Estava bisbilhotando")
 );
 
 teste(
     "Resposta parcial",
-    respostaEhValida("bisbilhotando", "Estava bisbilhotando")
+    isAnswerValid("bisbilhotando", "Estava bisbilhotando")
 );
 
 teste(
     "Ignora maiúscula",
-    respostaEhValida("ESTAVA BISBILHOTANDO", "Estava bisbilhotando")
+    isAnswerValid("ESTAVA BISBILHOTANDO", "Estava bisbilhotando")
 );
 
 teste(
     "Ignora espaço",
-    respostaEhValida("  estava bisbilhotando  ", "Estava bisbilhotando")
+    isAnswerValid("  estava bisbilhotando  ", "Estava bisbilhotando")
 );
 
 teste(
     "Resposta errada",
-    !respostaEhValida("comendo", "Estava bisbilhotando")
+    !isAnswerValid("comendo", "Estava bisbilhotando")
 );
