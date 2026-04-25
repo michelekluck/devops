@@ -4,7 +4,7 @@ function isAnswerValid(valor, respostaCorreta) {
             .toLowerCase()
             .trim()
             .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "")
+            .replace(/[\u0300-\u036f]/g, "");
 
     const v = normalizar(valor);
     const r = normalizar(respostaCorreta);

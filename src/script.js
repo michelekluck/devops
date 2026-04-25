@@ -2,14 +2,14 @@ const buttonAnswer = document.getElementById("button-answer");
 const buttonText = document.getElementById("button-text");
 const cardText = document.getElementById("text-card");
 
-const input = document.querySelector('input[name="answer"]');
-const buttonSend = document.querySelector(".button-send")
+const input = document.querySelector("input[name=\"answer\"]");
+const buttonSend = document.querySelector(".button-send");
 
 const acertosText = document.getElementById("acertos");
 let acertos = 0;
 
 const pergunta = "Husmeada";
-const resposta = "Estava bisbilhotando"
+const resposta = "Estava bisbilhotando";
 
 let mostrandoResposta = false;
 
@@ -17,10 +17,10 @@ let mostrandoResposta = false;
 buttonAnswer.addEventListener("click", () => {
     if (!mostrandoResposta) {
         cardText.textContent = resposta;
-        buttonText.textContent = "Ver pergunta"
+        buttonText.textContent = "Ver pergunta";
     } else {
         cardText.textContent = pergunta;
-        buttonText.textContent = "Ver resposta"
+        buttonText.textContent = "Ver resposta";
     }
 
     mostrandoResposta = !mostrandoResposta;
@@ -36,17 +36,17 @@ buttonSend.addEventListener("click", () => {
     }
 
     if (isAnswerValid(valor, resposta)) {
-        alert("acertou!")
+        alert("acertou!");
 
         acertos++;
-        acertosText.textContent = `Acertos: ${acertos}`
+        acertosText.textContent = `Acertos: ${acertos}`;
 
         input.disabled = true;
         buttonSend.disabled = true;
     } else {
-        alert("errou!")
+        alert("errou!");
     }
-})
+});
 
 function isAnswerValid(valor, respostaCorreta) {
     const normalizar = (texto) =>
@@ -54,7 +54,7 @@ function isAnswerValid(valor, respostaCorreta) {
             .toLowerCase()
             .trim()
             .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "")
+            .replace(/[\u0300-\u036f]/g, "");
 
     const v = normalizar(valor);
     const r = normalizar(respostaCorreta);
