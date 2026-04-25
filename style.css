@@ -74,7 +74,24 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
+    position: relative;
 
+}
+
+.card-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+.next-card {
+    white-space: nowrap;
+    position: absolute;
+    left: calc(50% + 270px);
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .item {
@@ -111,7 +128,14 @@ body {
 .button-send {
     background-color: #A3A38B;
     color: white;
-    cursor: pointer
+    cursor: pointer;
+    border: none;
+}
+
+.button-send:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+    color: grey;
 }
 
 .pontuacao {

@@ -20,28 +20,34 @@
         </div>
     </div>
     <div class="content">
-        <div class="card">
-            <p class="text-card">Husmeada</p>
+        <div class="card-wrapper">
+            <div class="card">
+                <p class="text-card" id="text-card">Husmeada</p>
+            </div>
+            <div class="next-card">
+                <p>> Próximo card</p>
+            </div>
         </div>
+
         <div id="button-answer" style="cursor: pointer;">
-            <p>Ver resposta</p>
+            <p id="button-text">Ver resposta</p>
         </div>
         <div class="container">
             <div class="button-idk item">Não sei</div>
             <div class="input-div item">
                 <input type="text" name="answer" placeholder="Resposta">
             </div>
-            <div class="button-send item">Enviar</div>
+            <button class="button-send item">Enviar</button>
         </div>
         <div class="pontuacao">
-            <p>Nao sabe: 0</p>
-            <p>Acertos: 0</p>
-            <p>Erros: 0</p>
+            <p id="nao-sabe">Nao sabe: 0</p>
+            <p id="acertos">Acertos: 0</p>
+            <p id="erros">Erros: 0</p>
         </div>
     </div>
 
 
-    <script src=" script.js">
+    <script src="script.js">
     </script>
 </body>
 
