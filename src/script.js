@@ -38,11 +38,11 @@ buttonAnswer.addEventListener("click", () => {
 
 // nao sei
 buttonIDK.addEventListener("click", () => {
-    score = updateScore(score, "naoSabe")
+    score = updateScore(score, "naoSabe");
     naoSabeText.textContent = `Nao sabe: ${score.naoSabe}`;
-    blockReply(input, buttonSend, buttonIDK)
+    blockReply(input, buttonSend, buttonIDK);
     naoSabeText.style.color = "black";
-})
+});
 
 // validar resposta 
 buttonSend.addEventListener("click", () => {
@@ -63,7 +63,7 @@ buttonSend.addEventListener("click", () => {
         feedbackMsg.textContent = feedback.text;
         feedbackMsg.style.color = feedback.color;
 
-        blockReply(input, buttonSend, buttonIDK)
+        blockReply(input, buttonSend, buttonIDK);
     } else {
         score = updateScore(score, "erro");
         errosText.textContent = `Erros: ${score.erros}`;
@@ -74,7 +74,7 @@ buttonSend.addEventListener("click", () => {
         feedbackMsg.textContent = feedback.text;
         feedbackMsg.style.color = feedback.color;
 
-        blockReply(input, buttonSend, buttonIDK)
+        blockReply(input, buttonSend, buttonIDK);
     }
 });
 

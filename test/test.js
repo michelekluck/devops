@@ -121,4 +121,4 @@ test(
     getFeedback("erro").color === "red"
 );
 
-console.log("\n✔ TODOS OS TESTES PASSARAM")
+console.log("\n✔ TODOS OS TESTES PASSARAM");
