@@ -103,16 +103,24 @@ body {
     border-radius: 20px;
 }
 
-.button-idk {
+#button-idk {
     background-color: red;
     color: white;
     margin-right: 8px;
-    cursor: pointer
+    cursor: pointer;
+    border: none;
 }
 
 .input-div {
     background-color: white;
     margin-right: 8px;
+}
+
+.input-div {
+    background-color: white;
+    margin-right: 8px;
+    border-radius: 20px;
+    overflow: hidden;
 }
 
 .input-div input {
@@ -125,21 +133,27 @@ body {
     text-align: center;
 }
 
-.button-send {
+#button-send {
     background-color: #A3A38B;
     color: white;
     cursor: pointer;
     border: none;
 }
 
-.button-send:disabled {
-    cursor: not-allowed;
-    opacity: 0.6;
-    color: grey;
+button:disabled {
+    cursor: not-allowed !important;
+    opacity: 0.5;
 }
 
 .pontuacao {
     align-self: flex-start;
+}
+
+.feedback-container {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .pontuacao p {
